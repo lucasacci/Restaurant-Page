@@ -1,0 +1,270 @@
+/* selector universal */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* selector de etiquetas */
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+nav{
+    padding: 20px 0px;
+    background: rgb(40, 41, 41);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 10px;
+    z-index: 40;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+
+nav a{
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav a:hover{
+    text-decoration: underline red;
+}
+
+h1, h2, h3, h4{
+    margin: 10px 0px;
+}
+
+hr{
+    margin: 10px 0px;
+}
+
+p{
+    margin: 10px 0px;
+}
+
+footer{
+    padding-top: 10px;
+    background-color: #FFF5EC;
+}
+
+
+
+/* selector de clases */
+
+.brand{
+    color: white;
+    margin-left: 20px;
+}
+
+.centrar{
+    text-align: center ;
+}
+
+.bannerContainer{
+    height: 500px;
+    position: relative;
+}
+
+.colorsection{
+    background-color: #FFF5EC;
+    padding: 10px 0px;
+}
+
+.contenedor{
+    margin: 30px;
+}
+
+.contenedorSobreImagen{
+    z-index: 4;
+    margin: 30px;
+    position: absolute;
+    color:  white;
+    bottom: 160px;
+    left: 100px;
+    right: 100px;
+    font-size: large;
+    font-style: italic;
+}
+.contenedorSobreImagen2{
+    z-index: 4;
+    margin: 30px;
+    position: absolute;
+    color:  white;
+    bottom: 160px;
+    left: 100px;
+    right: 100px;
+    font-size: large;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box{
+    border: 1px solid rgb(0, 0, 0);
+    width: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(40, 41, 41);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+ 
+.box h3,h4{
+    color: white;
+}
+
+.box:hover{
+ background-color: rgb(83, 85, 84);
+}
+
+footer ul{
+    list-style-position: inside;
+}
+
+footer h3{
+    color: red;
+}
+
+.redfooter{
+    background-color: rgba(243, 36, 36, 0.733);
+    padding: 20px ;
+    
+}
+
+.containercontacto{
+    margin: 20px;
+}
+
+.contenedortitulo{
+    text-align: center;
+    margin: 30px;
+}
+
+.margen{
+    margin: 0px 10px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.flex1{
+    display: flex;
+}
+.img{
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+/* selector por id   */
+
+
+#readmore{
+    color: red;
+    text-decoration: underline;
+}
+
+#rights{
+    color: white;
+    text-align: center;
+}
+
+#error{
+    padding-top: 105px;
+}
+
+.responsiveFlex{
+    flex-flow: row;
+}
+
+.containerText{
+    order: 1;
+}
+
+.contenedorImg{
+    order: 2;
+}
+
+.width{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 600px){
+      .responsiveFlex{
+          flex-flow: column;
+
+      }
+
+      .responsiveFlex article.contenedorImg{
+          order: 2;
+          
+      }
+
+      .containerText{
+          order: 1;
+      }
+
+      .flex{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 50%;
+    }
+
+    #error{
+        width: 100%;
+    }
+
+    .contenedorSobreImagen{
+        z-index: 4;
+        margin: 30px;
+        position: absolute;
+        color:  white;
+        bottom: 10px;
+        left: 100px;
+        right: 100px;
+        font-size: large;
+    }
+
+}
+
+@media screen and (min-width: 385px) and (max-width: 600px)
+{
+    .contenedorSobreImagen{
+        z-index: 4;
+        margin: 30px;
+        position: absolute;
+        color:  white;
+        bottom: 65px;
+        left: 100px;
+        right: 100px;
+        font-size: large;
+    }
+}
+
